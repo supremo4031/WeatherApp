@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:elevation="8dp"
+    android:background="#FF6D00"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true"
+        android:background="#03A9F4">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:queryHint="search city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="35dp"
+        android:layout_width="200dp"
+        android:elevation="8dp"
+        android:layout_gravity="center"
+        android:layout_height="400dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="#000"
+                android:paddingBottom="10dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/degree"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:text="@string/na"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_gravity="center"
+                    android:src="@drawable/clouds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/weather_image" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:text="@string/na"
+                    android:textColor="#fff"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:background="#fff"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:layout_gravity="center"
+                    android:text="@string/na"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/one"
+                        android:text="@string/temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/one"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/na" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/two"
+                        android:text="@string/humidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/humidity"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignEnd="@id/two"
+                        android:text="@string/na"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/three"
+                        android:text="@string/speed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/speed"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignEnd="@id/three"
+                        android:text="@string/na"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:text="@string/weather_app"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

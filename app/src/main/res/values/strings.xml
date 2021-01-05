@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="na">N/A</string>
+    <string name="speed">Speed</string>
+    <string name="humidity">Humidity</string>
+    <string name="temp">Temp</string>
+    <string name="weather_image">weather image</string>
+    <string name="weather_app">Weather App</string>
+</resources>
