@@ -3,7 +3,7 @@ package com.arpan.weatherapp.network
 import com.arpan.weatherapp.model.weatherModels.City
 import javax.inject.Inject
 
-class ApiServiceImpl @Inject constructor(
+class ApiServiceImp @Inject constructor(
     private val apiService: ApiService
 ) {
 
